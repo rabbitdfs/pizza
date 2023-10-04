@@ -1,0 +1,137 @@
+.main {
+  padding: 132px 0 81px 0;
+}
+
+.main .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-info {
+  max-width: 622px;
+}
+
+.main h1 {
+  font-size: 45px;
+  font-family: MullerExtraBold, sans-serif;
+  margin-bottom: 13px;
+}
+
+.main-advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.advantage {
+  max-width: 306px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 47px;
+}
+
+.advantage .advantage-text {
+  margin-left: 16px;
+  max-width: 288px;
+}
+
+.advantage .advantage-title {
+  font-size: 16px;
+  font-family: MullerExtraBold, sans-serif;
+  color: rgb(255, 175, 24);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.main-advantages .advantage .advantage-description {
+  font-size: 16px;
+  color: rgb(185, 145, 80);
+  max-width: 228px;
+}
+
+.main-action .button {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+
+
+}
+
+/* 1024 - 1229 */
+@media screen and (max-width: 1229px) {
+  .main-image {
+    width: 400px;
+  }
+
+  .main-image img {
+    width: 100%;
+  }
+
+
+  .order-form {
+    margin-left: 45px;
+  }
+  .order .container {
+    max-width: 1024px;
+  }
+}
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+  .main .container {
+    flex-direction: column;
+  }
+
+  .main-image {
+    order: 1;
+  }
+
+  .main-info {
+    order: 2;
+  }
+
+  .main {
+    padding-top: 70px;
+  }
+
+  .main h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .main-action {
+    text-align: center;
+  }
+}
+
+/* 425 - 767 */
+@media screen and (max-width: 767px) {
+  .main-info h1 {
+    line-height: 45px;
+  }
+
+  .main-advantages {
+    max-width: 306px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* 375 - 424 */
+@media screen and (max-width: 424px) {
+  .main-image {
+    width: 100%;
+  }
+
+}
+
+/* 320 - 374 */
+@media screen and (max-width: 374px) {
+  .main-info h1 {
+    font-size: 38px;
+  }
+}
